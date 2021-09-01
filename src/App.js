@@ -22,11 +22,11 @@ function App() {
   }
 
   const filteredTvShows = () => {
-    return tvShows.filter(tvshow => {
+    return tvShows.filter(tvShow => {
       if (!search) {
         return true
       } else {
-        return tvshow.name.toLowerCase().includes(search.toLowerCase())
+        return tvShow.name.toLowerCase().includes(search.toLowerCase())
       }
     })
   }
